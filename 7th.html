@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var now = new Date(); // no argument date
+        // var now = new Date(0); // argument date
+        // milliseconds: 0-999
+        // var now = new Date(2012,11,12); // argument date
+        // var now = new Date(Date.UTC(2012,0)); // argument date
+        // var now = new Date(Date.UTC(2012,0)); // argument date
+
+        var now = new Date();
+       
+        // document.write(now.toTimeString());
+        // document.write(now.toDateString());
+        // document.write(now.toISOString());
+        // document.write(now.toGMTString());
+        // document.write(now.toLocaleDateString());
+        function fromateDate(daysofweek, day, month, year){
+        var daysofweek = ["sun","mond","tues","wed","thurs","fri","sat"];
+            var month = ["jan","feb","march","april","may","june","july",
+        "august","sept","oct","nov","dec"];
+        return daysofweek[daysofweek]+ " " + month[month]+" "+ day+ " "+year;
+        }
+
+        // var a = fromateDate(7,sun,oct, 2024);
+        // document.write(a);
+        var birthday = new Date(Date.UTC(1993,8,14));
+        document.write("Ali was born on: " + fromateDate(birthday.getUTCDay(),
+        birthday.getUTCDate(), birthday.getUTCMonth(), birthday.getUTCFullYear()));
+
+        document.write(birthday.getTime());
+
+    </script>
+</body>
+</html>
