@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        // const f = ["b","e","a","z"];
+
+        // var d = f.reverse();
+        // document.write(d);
+
+        // const months = ["Jan","Feb","Mar","Apr"];
+        // // const s = months.toSorted();
+        // const s = months.toReversed();
+
+        // document.write(s);
+
+        // const p = [1,5,23,6,2,4,2,4,5,6,6];
+        // // const a  = p.sort(function (a,b){
+        // //     return b-a;
+        // // });
+        // // document.write(a);
+
+        // const a = p.sort(function(){
+        //     return 0.5 - Math.random()
+        // });
+        // document.write(a);
+
+        // fisher yates mathod
+        const p = [1,5,23,6,2,4,2,4,5,6,6];
+        document.getElementById("demo").innerHTML=p;
+
+        function myFunction(){
+         for(let i = p.length-1; i > 0; i--){
+            let j = Math.floor(Math.random() * (i+1));
+            let k = p[i];
+            p[i]=p[j];
+            p[j]=k;
+         }   
+         document.getElementById("demo").innerHTML=p;
+        }
+
+        // min, max values fined out 
+
+    </script>
+</body>
+</html>

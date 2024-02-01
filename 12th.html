@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="myfunction()">sort</button>
+    <p id="demo"></p>
+    <script>
+        const cellphone = [
+            {type:"Nokia", year:2002},
+            {type:"Samsung", year:2001},
+            {type:"Vivo", year:1995},
+            {type:"Infinx", year:2018}
+    ];
+
+    displayCellphone();
+    function myfunction(){
+        cellphone.sort(function(a,b){
+            let x = a.type.toLowerCase();
+            let y = b.type.toLowerCase();
+            if(x < y){return -1;}
+            if(x > y){return 1;}
+            return 0;
+        }); 
+    displayCellphone();
+    }
+    
+    function displayCellphone(){
+        document.getElementById("demo").innerHTML = 
+        cellphone[0].type + "  " + cellphone[0].year + "<br>"+
+        cellphone[1].type + "  " + cellphone[1].year + "<br>"+
+        cellphone[2].type + "  " + cellphone[2].year + "<br>"+
+        cellphone[3].type + "  " + cellphone[3].year;
+    } -->
+
+    <!-- // array iteration
+    // foreach, map,filter, flatmap,reduce, reduceright, every, some, from, keys, entries, with, spread
+
+    </script> -->
+
+    <script>
+        const number = [45,4,9,16,25,25];
+        let txt = "";
+        number.forEach(myfunction);
+        document.write(txt);
+        function myfunction(value, index, array){
+            txt = txt + value + "<br>";
+        }
+    </script>
+</body>
+</html>
